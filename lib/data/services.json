@@ -1,0 +1,50 @@
+[
+    {
+        "type": "header",
+        "version": "5.1.4",
+        "comment": "Export to JSON plugin for PHPMyAdmin"
+    },
+    {
+        "type": "database",
+        "name": "puppy_bdd"
+    },
+    {
+        "type": "table",
+        "name": "services",
+        "database": "puppy_bdd",
+        "data": [
+            {
+                "service_id": "1",
+                "nom_service": "Toilettage complet",
+                "description": "Cela comprend le bain, le séchage, la coupe des ongles, le brossage des dents, le nettoyage des oreilles et la coupe de poils selon le style ou la rac",
+                "prix": "30",
+                "temps": "00:38:00",
+                "img_service": "C:\\wamp64\\www\\flutter\\flutter_appli_puppy\\assets\\toilettage.jpeg"
+            },
+            {
+                "service_id": "2",
+                "nom_service": "Tonte et coupe de poils",
+                "description": "Certains chiens nécessitent une tonte régulière pour maintenir leur pelage court et soigné, tandis que d'autres races nécessitent une coupe spécifique pour préserver leur apparence caractéristique.",
+                "prix": "60",
+                "temps": "01:00:00",
+                "img_service": "C:\\wamp64\\www\\flutter\\flutter_appli_puppy\\assets\\tonte.png"
+            },
+            {
+                "service_id": "3",
+                "nom_service": "Massage et relaxation",
+                "description": "Certains toiletteurs proposent des massages relaxants pour aider à détendre les chiens anxieux ou stressés pendant le processus de toilettage.",
+                "prix": "70",
+                "temps": "02:00:00",
+                "img_service": "C:\\wamp64\\www\\flutter\\flutter_appli_puppy\\assets\\relaxation.jpeg"
+            },
+            {
+                "service_id": "4",
+                "nom_service": "Bains et shampooings",
+                "description": "Le toiletteur utilise des produits adaptés aux besoins spécifiques de chaque chien, tels que des shampooings hypoallergéniques, anti-puces ou apaisants pour la peau irritée.\r\n\r\n",
+                "prix": "40",
+                "temps": "00:43:00",
+                "img_service": "C:\\wamp64\\www\\flutter\\flutter_appli_puppy\\assets\\bains.png"
+            }
+        ]
+    }
+]
