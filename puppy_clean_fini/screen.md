@@ -8,4 +8,4 @@ Puppy Clean
 
 ![Capture d'écran 3](services2_screen.png "Service")
 
-![Capture d'écran 4](about.png "A propos")
+![Capture d'écran 4](screen_about.png "A propos")
