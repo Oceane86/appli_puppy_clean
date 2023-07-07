@@ -9,13 +9,13 @@ Ceci est le repository de mon application "Puppy Clean" de mon application mobil
 
 ## Captures d'écran
 
-![Capture d'écran 1](../flutter_appli_puppy/puppy_clean_fini/homepage_screen.png "Homepage")
+![Capture d'écran 1](./puppy_clean_fini/homepage_screen.png "Homepage")
 Homepage du site où l'on peut voir rapidement les différents services proposés et les plus choisies
 
 ![Capture d'écran 2](../flutter_appli_puppy/puppy_clean_fini/services_screen.png "Service")
 Sur la page service où on a les différentes propositions de service du toiletteur
 
-![Capture d'écran 3](../flutter_appli_puppy/puppy_clean_fini/services2_screen.png "Service")
+![Capture d'écran 3](../flutter_appli_puppy/puppy_clean_fini/service2_screen.png "Service")
 On a sur cette page, la description plus détaillées d'un service en particulier
 ![Capture d'écran 4](../flutter_appli_puppy/puppy_clean_fini/about.png "A propos")
 On peut voir les informations importantes concernants le toiletteur
