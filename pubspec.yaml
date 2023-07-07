@@ -10,6 +10,8 @@ dependencies:
   flutter:
     sdk: flutter
   http: ^1.1.0
+  flutter_native_splash: ^2.3.1
+
 
 dev_dependencies:
   flutter_test:
@@ -37,6 +39,26 @@ flutter:
       - family: Questrial
         fonts:
             - asset: assets/Questrial-Regular.ttf 
+      - family: Bubblegum
+        fonts:
+            - asset: assets/Bubblegum.ttf
+
+
+
+flutter_native_splash:
+  image: assets/puppy_logo.png
+  color: "#42a5f5"
+  android: true
+  ios: true
+  androidText: Puppy Clean
+  iosText: Puppy Clean
+  androidTextSize: 24
+  iosTextSize: 24
+  androidTextFont: Bubblegum
+  iosTextFont: Bubblegum
+  iosTextColor: white
+
+
 
       
 

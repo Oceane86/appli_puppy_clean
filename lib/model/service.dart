@@ -14,26 +14,22 @@ class Service {
   String temps;
   String img_service;
 
-
   Service(
       {required this.service_id,
       required this.nom_service,
       required this.description,
       required this.prix,
       required this.temps,
-      required this.img_service
-
-      });
+      required this.img_service});
 
   factory Service.fromJson(Map<String, dynamic> json) {
     return Service(
-      service_id: json['service'],
-      nom_service: json['nom'],
+      service_id: json['service_id'],
+      nom_service: json['nom_service'],
       description: json['description'],
       prix: json['prix'],
       temps: json['temps'],
-      img_service: json['img'],
-
+      img_service: json['img_service'],
     );
   }
 }
@@ -43,6 +39,7 @@ class ServiceHttp {
     final res = await http.get(serviceURL);
     if (res.statusCode == 200) {
       List<dynamic> body = jsonDecode(res.body);
+      print(body);
       List<Service> datas = body
           .map(
             (dynamic item) => Service.fromJson(item),

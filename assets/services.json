@@ -1,0 +1,34 @@
+[
+            {
+                "service_id": "1",
+                "nom_service": "Toilettage complet",
+                "description": "Cela comprend le bain, le sechage, la coupe des ongles, le brossage des dents, le nettoyage des oreilles et la coupe de poils selon le style ou la rac",
+                "prix": "30",
+                "temps": "00:38:00",
+                "img_service": "https://puppy.alwaysdata.net/toilettage.jpeg"
+            },
+            {
+                "service_id": "2",
+                "nom_service": "Tonte et coupe de poils",
+                "description": "Certains chiens necessitent une tonte reguliere pour maintenir leur pelage court et soigne, tandis que d'autres races necessitent une coupe specifique pour preserver leur apparence caracteristique.",
+                "prix": "60",
+                "temps": "01:00:00",
+                "img_service": "https://puppy.alwaysdata.net/tonte.png"
+            },
+            {
+                "service_id": "3",
+                "nom_service": "Massage et relaxation",
+                "description": "Certains toiletteurs proposent des massages relaxants pour aider a detendre les chiens anxieux ou stresses pendant le processus de toilettage.",
+                "prix": "70",
+                "temps": "02:00:00",
+                "img_service": "https://puppy.alwaysdata.net/relaxation.jpeg"
+            },
+            {
+                "service_id": "4",
+                "nom_service": "Bains et shampooings",
+                "description": "Le toiletteur utilise des produits adaptes aux besoins specifiques de chaque chien, tels que des shampooings hypoallergeniques, anti-puces ou apaisants pour la peau irritee.\r\n\r\n",
+                "prix": "40",
+                "temps": "00:43:00",
+                "img_service": "https://puppy.alwaysdata.net/bains.png"
+            }
+        ]

@@ -1,7 +1,4 @@
-// 
-// 
+//
+//
 
-
-final Uri serviceURL = Uri.https("img_services", "/service.json");
-
-
+final Uri serviceURL = Uri.https("puppy.alwaysdata.net", "services.json");

@@ -1,97 +1,149 @@
 // screen/home.dart
-
+// 
 import 'package:flutter/material.dart';
 
 class HomeScreen extends StatelessWidget {
-
-
-  
-
-  // 
-
-  @override 
+  @override
   Widget build(BuildContext context) {
+    return Scaffold(
 
-    // Vu pour scroll
-    return SingleChildScrollView(
-      padding: EdgeInsets.all(30),
-      child: Column(
-        crossAxisAlignment: CrossAxisAlignment.start,// 
-        children: <Widget>[
-          const Text("Home"),
-          const SizedBox(height: 20),
-          const Divider(thickness: 22, color: Colors.lightGreenAccent),  //trait de certaines epaisseur
-          // 
-          // 
-          // 
-
-    
-          const SizedBox(height: 10),
-          const Row(
-            crossAxisAlignment: CrossAxisAlignment.center,
-            children: [
-              Icon(Icons.settings_accessibility_outlined),
-              SizedBox(width: 19),
-              Text("C'est bon   \nfbuqbfqsjibcqsccsk ckc sdiovqiosgvio \nqvioqscsknqsiokcnqsifaifianaiocnqnci \nqsncuibçarzarazdqsdqns")
-            ],
-          ),
-
-          // Just do it
-          // 
-          // 
-
-          const SizedBox(height: 10),
-          const Row(
-            crossAxisAlignment: CrossAxisAlignment.center,
-            children: [
-              Icon(Icons.emoji_emotions_sharp),
-              SizedBox(width: 19),
-              Column(
-                crossAxisAlignment: CrossAxisAlignment.start,
+      body: SingleChildScrollView(
+        child: Column(
+          children: [
+            Container(
+              width: 200,
+              height: 200,
+              child: Image.asset(
+                'assets/puppy_logo.png',
+                fit: BoxFit.cover,
+              ),
+            ),
+            Container(
+              padding: EdgeInsets.all(16),
+              child: const Align(
+                alignment: AlignmentDirectional.centerStart,
+                child: Text(
+                  'Services',
+                  style: TextStyle(
+                    fontSize: 20,
+                    fontWeight: FontWeight.w100,
+                  ),
+                ),
+              ),
+            ),
+            const Padding(
+              padding: EdgeInsets.symmetric(vertical: 8.0),
+              child:
+               Row(
+                mainAxisAlignment: MainAxisAlignment.spaceEvenly,
                 children: [
-                  Text("DSCSDVS"),
-                  Text("DSCSDVS"),
-
+                  Icon(Icons.cut, size: 22),
+                  Icon(Icons.wash_rounded, size: 22),
+                  Icon(Icons.countertops_sharp, size: 22),
+                  Icon(Icons.cookie_outlined, size: 22),
                 ],
               ),
-
-            ], 
-   
-          ),
-
-          // Images centré
-
-          Center(
-              child:  Image.asset(
-              "assets/puppy_logo.png",           // locales
-
-              width: 300,
-              height: 300,
             ),
-    
-          ),
-          // Images en ligne
-          Image.network("https://img.att.ovh/brussels-expo.jpg"),
 
+            const Padding(
+              padding: EdgeInsets.symmetric(vertical: 8.0),
+              child:
+              Row(
+                mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+                children: [
+                  Icon(Icons.face_retouching_natural_sharp, size: 22),
+                  Icon(Icons.cleaning_services_sharp, size: 22),
+                  Icon(Icons.clean_hands_sharp, size: 22),
+                  Icon(Icons.cut, size: 22),
+                ],
+              ),
+            ),
+            Container(
+              padding: EdgeInsets.all(16),
+              child: Column(
+                crossAxisAlignment: CrossAxisAlignment.start,
+                children: [
+                  const Text(
+                    'Nos services populaires',
+                    style: TextStyle(
+                      fontSize: 20,
+                      fontWeight: FontWeight.w100,
+                    ),
+                  ),
 
-          Row(
-            crossAxisAlignment: CrossAxisAlignment.center,
-            children: [
-              Image.asset("assets/puppy_logo.png", width: 40,),
-              const SizedBox(width: 19),
-               const Text("C'est bon   \nfbuqbfqsjibcqsccsk ckc sdiovqiosgvio \nqvioqscsknqsiokcnqsifaifianaiocnqnci \nqsncuibçarzarazdqsdqns")
-            ],
-          ),
+                  Row(
+                  children: [
+                    Expanded(
+                      child: Card(
+                       child: Column(
+                          children: [
+                            Image.asset('assets/favoris.jpeg', width: 150, height: 150),
+                            ListTile(
+                              title: Text('Détente'),
+                              subtitle: Text('Offrez à votre animal de compagnie un moment de relaxation ultime.Nos professionnels qualifiés'),
+                            ),
+                          ],
+                        ),
+                      ),
+                    ),
+                    Expanded(
+                      child: Card(
+                        child: Column(
+                          children: [
+                            Image.asset('assets/bains.png', width: 150, height: 150),
+                            ListTile(
+                              title: Text('Bains'),
+                              subtitle: Text('Offrez à votre compagnon à fourrure une expérience de bain luxueuse et rafraîchissante.'),
+                            ),
+                          ],
+                        ),
+                      ),
+                    ),
+                  ],
+                ),
 
+                  SizedBox(height: 16),
 
-
-
-
-          // @todo : la suite :
-        ],  //signifie que c'est une liste
-      ) , // list de composants ou composant individuel
+                                    
+                  SizedBox(height: 16),
+                  Stack(
+                    children: [
+                      Container(
+                        width: 500,
+                        height: 200,
+                        child: Row(
+                        mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+                        children: [
+                          Column(
+                            children: [
+                              Image.asset('assets/relaxation.jpeg', width: 150, height: 150),
+                              Text('Relaxation'),
+                            ],
+                          ),
+                          Column(
+                            children: [
+                              Image.asset('assets/tonte.png', width: 150, height: 150),
+                              Text('Tonte'),
+                            ],
+                          ),
+                        ],
+                      ),
+                    ),
+ 
+                    ],
+                  ),
+                ],
+              ),
+            ),
+          ],
+        ),
+      ),
     );
-  
   }
-
 }
+
+
+
+
+
+
