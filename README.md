@@ -17,7 +17,7 @@ Sur la page service où on a les différentes propositions de service du toilett
 
 ![Capture d'écran 3](./puppy_clean_fini/service2_screen.png "Service")
 On a sur cette page, la description plus détaillées d'un service en particulier
-![Capture d'écran 4](./puppy_clean_fini/about.png "A propos")
+![Capture d'écran 4](./puppy_clean_fini/about_screen.png "A propos")
 On peut voir les informations importantes concernants le toiletteur
 
 ## Installation
